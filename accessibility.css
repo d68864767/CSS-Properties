@@ -1,0 +1,54 @@
+/* accessibility.css */
+
+/* ARIA attributes */
+[role="navigation"] {
+    background-color: #f5f5f5;
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Screen reader support */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* CSS for Print */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 18pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+    }
+
+    h3 {
+        font-size: 14pt;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .print-only {
+        display: block;
+    }
+}

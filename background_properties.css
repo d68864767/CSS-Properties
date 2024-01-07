@@ -1,0 +1,27 @@
+/* background_properties.css */
+
+/* Background color */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Background image */
+body {
+    background-image: url('images/background.jpg');
+}
+
+/* Background position and repeat */
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Background size for full cover */
+body {
+    background-size: cover;
+}
+
+/* Background attachment for fixed image */
+body {
+    background-attachment: fixed;
+}

@@ -1,0 +1,32 @@
+/* browser_support.css */
+
+/* IE-specific CSS */
+/* Internet Explorer requires some specific CSS rules and hacks for proper rendering. 
+   Here are some examples: */
+
+/* To target IE 10 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10-specific styles go here */
+}
+
+/* To target IE 11 */
+_:-ms-fullscreen, :root .ie11-class {
+    /* IE11-specific styles go here */
+}
+
+/* Edge-specific CSS */
+/* Microsoft Edge also has some specific requirements. 
+   Here are some examples: */
+
+/* To target Edge 15 and below */
+@supports (-ms-ime-align:auto) {
+    /* Edge 15 and below-specific styles go here */
+}
+
+/* To target Edge 16 and above */
+@supports (color: var(--color-var)) {
+    /* Edge 16 and above-specific styles go here */
+}
+
+/* Note: These are just examples and may not cover all cases. 
+   Always test your website in multiple browsers to ensure compatibility. */

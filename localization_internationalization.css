@@ -1,0 +1,29 @@
+/* localization_internationalization.css */
+
+/* Multilingual CSS */
+html:lang(en) {
+    font-family: Arial, sans-serif;
+}
+
+html:lang(es) {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html:lang(fr) {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Language-specific styles */
+body:lang(en) {
+    color: #333;
+}
+
+body:lang(es) {
+    color: #666;
+}
+
+body:lang(fr) {
+    color: #999;
+}
+
+/* You can add more language-specific styles as per your requirements */

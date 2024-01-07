@@ -1,0 +1,40 @@
+/* selectors.css */
+
+/* Class selectors */
+.class-name {
+    color: #333;
+    font-size: 16px;
+}
+
+/* ID selectors */
+#id-name {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Pseudo-class selectors */
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 2px solid #333;
+}
+
+/* Pseudo-element selectors */
+p::before {
+    content: "Before";
+    color: #333;
+}
+
+p::after {
+    content: "After";
+    color: #333;
+}

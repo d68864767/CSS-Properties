@@ -1,0 +1,30 @@
+/* typography.css */
+
+/* Web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Line-height */
+body {
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* Letter spacing */
+body {
+    letter-spacing: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+}
+
+p {
+    letter-spacing: 0.5px;
+}

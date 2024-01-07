@@ -1,0 +1,41 @@
+/* testing_debugging.css */
+
+/* CSS unit testing */
+/* 
+CSS unit testing is not as common as JavaScript unit testing, but it can be done. Tools like Quixote, True, and CSS Critic can be used to test your CSS code. 
+
+Here's an example of how you might use Quixote to test a simple CSS rule:
+
+```javascript
+test("Box model", function() {
+    var container = quixote.createFrame({
+        src: "/your-page.html",  // the page under test
+        width: 600   // the viewport width
+    });
+
+    var box = container.get("#box");  // the element under test
+
+    box.assert({
+        width: 100,   // the box should be 100px wide
+        height: 200   // and 200px tall
+    });
+
+    container.remove();
+});
+```
+
+Remember, this is just an example. The actual testing code would be written in JavaScript and run with a test runner like Mocha or Jasmine.
+*/
+
+/* Browser developer tools */
+/* 
+Browser developer tools are essential for testing and debugging CSS. They allow you to inspect elements, view and modify CSS, monitor network activity, and much more.
+
+Here's an example of how you might use Chrome DevTools to inspect an element:
+
+1. Right-click on the element you want to inspect and select 'Inspect' from the context menu.
+2. The 'Elements' panel will open, showing you the HTML for the inspected element. The CSS rules for the selected element will be displayed in the 'Styles' tab on the right side of the panel.
+3. You can modify the CSS rules in the 'Styles' tab to see how changes would affect the element. Your changes will be applied immediately, but they won't be saved when you refresh the page.
+
+Remember, each browser has its own set of developer tools, and they all work a bit differently. Be sure to familiarize yourself with the developer tools in the browsers you use most often.
+*/

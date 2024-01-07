@@ -1,0 +1,79 @@
+/* css_in_js.css */
+
+/* CSS-in-JS Solutions */
+
+/* CSS-in-JS is a pattern where CSS is composed using JavaScript instead of defined in external files. 
+   This approach has a number of advantages, including the ability to have scoped styles, dynamic styles based on component state, 
+   and the ability to leverage the full power of JavaScript within your styles. */
+
+/* Here are some examples of popular CSS-in-JS libraries and how you might use them: */
+
+/* Emotion */
+/* Emotion is a performant and flexible CSS-in-JS library. It allows you to style apps quickly with string or object styles. 
+   It has predictable composition to avoid specificity issues with CSS. 
+   With source maps and labels, Emotion has a great developer experience and great performance with heavy caching in production. */
+
+/*
+import { css } from '@emotion/react'
+
+const style = css`
+  color: hotpink;
+`
+
+<div css={style}>Some text!</div>
+*/
+
+/* styled-components */
+/* styled-components is a CSS-in-JS library that enables you to craft components with style. 
+   It has a familiar CSS syntax for defining styles in JavaScript, and it removes the mapping between components and styles. 
+   This means that when you're defining your styles, you're actually creating a normal React component. */
+
+/*
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+`;
+
+<Button>Styled Button</Button>
+*/
+
+/* JSS (JavaScript Style Sheets) */
+/* JSS is an authoring tool for CSS which uses JavaScript as a host language. 
+   It can compile in the browser, server-side or at build time in Node. 
+   It's an abstraction over CSS which allows to use JavaScript to describe styles in a declarative, conflict-free and reusable way. */
+
+/*
+import { createUseStyles } from 'react-jss'
+
+const useStyles = createUseStyles({
+  myButton: {
+    color: 'green',
+    margin: {
+      top: 5, // jss-plugin-expand gives more readable syntax
+      right: 0,
+      bottom: 0,
+      left: '1rem' // jss-plugin-default-unit makes this 1rem
+    },
+    '& span': { // jss-plugin-nested applies this to a child span
+      fontWeight: 'bold' // jss-plugin-camel-case turns this into 'font-weight'
+    }
+  },
+  myLabel: {
+    fontStyle: 'italic'
+  }
+})
+
+const Button = ({children}) => {
+  const classes = useStyles()
+  return <button className={classes.myButton}><span className={classes.myLabel}>{children}</span></button>
+}
+*/
+
+/* Note: The above code snippets are not valid CSS, they're examples of how you might write CSS with a CSS-in-JS library. 
+   They would need to be processed into standard CSS before they could be used in a browser. */

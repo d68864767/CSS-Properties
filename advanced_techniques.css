@@ -1,0 +1,34 @@
+/* advanced_techniques.css */
+
+/* CSS variables (custom properties) */
+:root {
+    --main-color: #333;
+    --secondary-color: #f5f5f5;
+    --font-size: 16px;
+}
+
+body {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+
+/* CSS blend modes */
+.image {
+    background-blend-mode: multiply;
+}
+
+/* CSS shapes */
+.shape {
+    shape-outside: circle();
+}
+
+/* CSS Framework Customization */
+.custom-bootstrap-btn {
+    @extend .btn;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+/* Integration with JavaScript */
+/* Note: This is a comment placeholder. Actual JavaScript integration would be done in a .js file. */

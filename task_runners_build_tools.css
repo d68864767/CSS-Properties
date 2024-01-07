@@ -1,0 +1,60 @@
+/* task_runners_build_tools.css */
+
+/* 
+Task runners and build tools like Gulp, Grunt, and Webpack are used to automate repetitive tasks like minification, compilation, unit testing, linting, etc. They can significantly speed up your development process and help you write more efficient code.
+
+Here's an example of how you might use Gulp to compile Sass to CSS, minify the CSS and live reload the browser:
+
+1. First, install Gulp globally and in your project directory. Also install the necessary Gulp plugins.
+
+```bash
+npm install --global gulp-cli
+npm install --save-dev gulp gulp-sass gulp-clean-css browser-sync
+```
+
+2. Create a gulpfile.js in your project root and require the installed packages.
+
+```javascript
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
+var browserSync = require('browser-sync').create();
+```
+
+3. Set up the tasks.
+
+```javascript
+gulp.task('sass', function() {
+    return gulp.src('src/scss/**/*.scss') // Gets all files ending with .scss in src/scss and children dirs
+    .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(cleanCSS({compatibility: 'ie8'})) // Minifies the result
+    .pipe(gulp.dest('dist/css')) // Outputs the result to 'dist/css' folder
+    .pipe(browserSync.reload({
+        stream: true
+    }));
+});
+
+gulp.task('watch', ['browserSync', 'sass'], function (){
+    gulp.watch('src/scss/**/*.scss', ['sass']); 
+    // Other watchers
+});
+
+gulp.task('browserSync', function() {
+    browserSync.init({
+        server: {
+            baseDir: 'dist'
+        },
+    })
+});
+```
+
+4. Run the 'watch' task.
+
+```bash
+gulp watch
+```
+
+This is just a basic example. Gulp, Grunt, and Webpack have many more capabilities and there are many plugins available to extend their functionality.
+
+Remember, this file is managed with Git for version control. To commit changes to this file, refer to the instructions in version_control.css.
+*/

@@ -1,0 +1,22 @@
+/* security.css */
+
+/* Protecting against CSS vulnerabilities */
+
+/* Be careful with the use of expressions, behaviors, and HTC files in your CSS, as they can open up security holes. 
+   These are features specific to Internet Explorer and are not recommended for use. */
+
+/* Content Security Policy (CSP) */
+
+/* Content Security Policy is a security layer that helps to detect and mitigate certain types of attacks, 
+   like Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from 
+   data theft to site defacement or distribution of malware. 
+
+   CSP is designed to be fully backward compatible (except for specific clearly-defined high-risk situations); 
+   browsers that don't support it still work with servers that implement it, and vice-versa: browsers that don't 
+   support CSP simply ignore it, functioning as usual, defaulting to the standard same-origin policy for web content.
+
+   If the server is properly configured and a CSP header is sent, then the browser will only load resources (images, 
+   styles, scripts, etc.) from the locations specified in the header. 
+
+   This is not something that can be demonstrated with CSS code, as it's a server-side setting. */
+

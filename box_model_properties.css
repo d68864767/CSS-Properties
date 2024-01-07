@@ -1,0 +1,25 @@
+/* box_model_properties.css */
+
+/* Width and height */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Margin and padding */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Border properties */
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Box-shadow */
+.box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

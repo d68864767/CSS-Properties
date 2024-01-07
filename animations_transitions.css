@@ -1,0 +1,40 @@
+/* animations_transitions.css */
+
+/* CSS animations */
+@keyframes example {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: green;}
+}
+
+.animation-example {
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Transition effects */
+.transition-example {
+    transition: width 2s;
+}
+
+.transition-example:hover {
+    width: 100%;
+}
+
+/* Keyframes */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.slidein-example {
+    animation-duration: 3s;
+    animation-name: slidein;
+}

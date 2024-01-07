@@ -1,0 +1,70 @@
+/* preprocessors.css */
+
+/* CSS Preprocessors */
+
+/* Sass */
+/* Sass is a CSS preprocessor that allows for variables, nesting, mixins, inheritance and more. 
+   It's written in a .scss or .sass file and then compiled to standard CSS. 
+   Here's an example of some Sass code: */
+
+/*
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+*/
+
+/* Less */
+/* Less is another CSS preprocessor that offers similar features to Sass. 
+   It's written in a .less file and then compiled to standard CSS. 
+   Here's an example of some Less code: */
+
+/*
+@font-stack:    Helvetica, sans-serif;
+@primary-color: #333;
+
+body {
+  font: 100% @font-stack;
+  color: @primary-color;
+}
+*/
+
+/* Stylus */
+/* Stylus is a CSS preprocessor that's known for its flexibility. 
+   It can be written in a .styl file and then compiled to standard CSS. 
+   Here's an example of some Stylus code: */
+
+/*
+font-stack = 'Helvetica, sans-serif'
+primary-color = #333
+
+body
+  font 100% font-stack
+  color primary-color
+*/
+
+/* CSS-in-JS solutions */
+/* These are not preprocessors, but they're related technologies that allow for CSS to be written in JavaScript files. 
+   They often come with their own set of features, like scoped styles and dynamic styles based on props. 
+   Here's an example of some styled-components code (a popular CSS-in-JS library): */
+
+/*
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+*/
+
+/* Note: The above code snippets are not valid CSS, they're examples of how you might write CSS with a preprocessor or CSS-in-JS library. 
+   They would need to be compiled or processed into standard CSS before they could be used in a browser. */
